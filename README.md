@@ -9,7 +9,13 @@ Backend
 Frontend
 -> React
 
+## Leituras
 
+https://diandrasilva.medium.com/como-funciona-a-arquitetura-mtv-django-86af916f1f63
+
+https://medium.com/@renatojlelis/entendendo-a-arquitetura-do-django-f4b505773c14
+
+https://medium.com/@coutinholps/criando-um-criando-o-todoapp-com-django-5e2fb440dad0
 
 
 

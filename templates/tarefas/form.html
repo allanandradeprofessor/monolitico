@@ -1,0 +1,22 @@
+<h1>Formulário de Tarefa</h1>
+
+<form method="POST">
+  {% csrf_token %}
+
+  <input type="text" name="nome" placeholder="Nome"
+         value="{{ tarefa.nome|default:'' }}" required>
+
+  <textarea name="descricao" placeholder="Descrição">{{ tarefa.descricao|default:'' }}</textarea>
+
+  <input type="date" name="data_inicio"
+         value="{{ tarefa.data_inicio|default:'' }}" required>
+
+  <select name="status">
+    <option value="nao_iniciado">Não iniciado</option>
+    <option value="aprovado">Aprovado</option>
+    <option value="paralisado">Paralisado</option>
+    <option value="finalizado">Finalizado</option>
+  </select>
+
+  <button type="submit">Salvar</button>
+</form>
